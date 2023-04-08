@@ -1,12 +1,19 @@
-// Write a dart program to print your name 100 times.
-void main() {
-  String name = "Ram";
-  nameloop('$name');
+//Create an empty list of type strings called days. Use the add method to add names of 7 days and print all days.
+
+void main(List<String> args) {
+  List<String> days = [];
+  days.add("Sunday");
+  days.add("Monday");
+  days.add("Tuesday");
+  days.add("Wednesday");
+  days.add("Thursday");
+  days.add("Friday");
+  days.add("Saturday");
+  printDays(days);
 }
 
-void nameloop(String name) {
-  int c = 100;
-  for (int num = 1; num <= c; num++) {
-    print("$num. $name");
+void printDays(List days) {
+  for (var i = 0; i < days.length; i++) {
+    print(days[i]);
   }
 }

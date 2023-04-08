@@ -1,14 +1,19 @@
-// Write a dart program to calculate the sum of natural numbers.
-void main() {
-  int num = 5;
-  int a = sum(num);
-  print("The sum of the numbers is $a");
+//Add your 7 friend names to the list. Use where to find a name that starts with the alphabet a.
+void main(List<String> args) {
+  List<String> list = [];
+  list.add('Ajay');
+  list.add('Devgan');
+  list.add('Alexander');
+  list.add('Arnold');
+  list.add('Anjilina');
+  list.add('Jolie');
+  list.add('Selena');
+  list.add('Gomez');
+  list.add('Pete');
+  stars(list);
 }
 
-int sum(int num) {
-  int n = 0;
-  for (int i = 1; i <= num; i++) {
-    n += i;
-  }
-  return n;
+void stars(List names) {
+  var name = names.where((x) => x[0].toLowerCase() == 'a');
+  print('names starting with a are : $name');
 }

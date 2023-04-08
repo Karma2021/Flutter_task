@@ -1,14 +1,10 @@
-// Write a dart program to check if the number is odd or even.
+//Create a list of names and print all names using the list.
 
-void main() {
-  int num = 4;
-  EvenOdd(num);
+void main(List<String> args) {
+  List<String> players = ['messi', 'debruyne', 'haaland'];
+  printPlayer(players);
 }
 
-void EvenOdd(int num) {
-  if (num % 2 == 0) {
-    print("The number is Even");
-  } else {
-    print("The number is odd");
-  }
+void printPlayer(List names) {
+  print(names);
 }

@@ -1,15 +1,14 @@
-// Write a dart program to check whether a number is positive, negative, or zero.
+//Create a program that reads a list of expenses amount using user input and prints the total.
 void main(List<String> args) {
-  String chk = varchk(4);
-  print('The number is $chk');
+  List expenses = [5000, 6000, 7000];
+  expenseCalculator(expenses);
 }
 
-String varchk(int num) {
-  if (num > 0) {
-    return 'positive';
-  } else if (num < 0) {
-    return 'negetive';
-  } else {
-    return 'zero';
+void expenseCalculator(List expense) {
+  double total = 0;
+
+  for (var i in expense) {
+    total = total + i;
   }
+  print(total);
 }

@@ -1,12 +1,19 @@
-// /Write a dart program to generate multiplication tables of 5.
-void main() {
-  int n = 5;
-  table(n);
+//Create a map with name, address, age, country keys, and store values.
+//Update country name to other country and print all keys and values.
+void main(List<String> args) {
+  Map<String, String> map = {};
+  map["name"] = "Satish";
+  map['Address'] = "Kapurdhara";
+  map['age'] = '20';
+  map['country'] = "Nepal";
+  map['country Key'] = '44600';
+  map['country'] = 'Japan';
+  printKeyValue(map);
 }
 
-void table(int n) {
-  for (int i = 1; i <= 10; i++) {
-    int m = n * i;
-    print("$n x $i = $m");
-  }
+void printKeyValue(Map map) {
+  print("The keys are :");
+  print(map.keys);
+  print("The values are :");
+  print(map.values);
 }
